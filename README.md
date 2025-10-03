@@ -9,7 +9,7 @@ AegisCode is a next-generation, self-hosted AI code editor and compiler that emp
 ## ✨ Features
 
 - **Self-Hosted & Secure:** Your code and data never leave your environment.
-- **Multi-Model Support:** Seamlessly use multiple free open-source cloud models (e.g., [Ollama](https://ollama.com/), [OpenHermes](https://huggingface.co/openhermes), [Llama.cpp](https://github.com/ggerganov/llama.cpp)), and connect your own premium models (OpenAI, Anthropic, Gemini, etc.).
+- **Multi-Model Support:** Seamlessly use multiple free open-source models (e.g., [Ollama](https://ollama.com/), [OpenHermes](https://huggingface.co/openhermes), [Llama.cpp](https://github.com/ggerganov/llama.cpp)), and connect your own premium models (OpenAI, Anthropic, Gemini, etc.).
 - **Agentic AI:** Smart agentic code building, planning, and thinking—let AegisCode plan, write, and refactor code for you.
 - **Automatic Model Selection:** Optional auto-agent chooses the best available LLM for your task.
 - **.vsix Extension Support:** Extend functionality with Visual Studio Code extensions.
@@ -108,6 +108,7 @@ AegisCode supports .vsix extensions for limitless customization.
 - [Model Integration](docs/model_integration.md)
 - [Extension Development](docs/extension_dev_guide.md)
 - [Security](docs/security.md)
+- [FAQ](FAQ.md)
 
 ---
 

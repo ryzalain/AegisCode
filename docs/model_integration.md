@@ -20,4 +20,4 @@ Configure your preferred models in the settings panel. Enable "Auto-Agent" to le
 
 ## Troubleshooting
 
-See [FAQ](../FAQ.md) or open an issue.
+See [FAQ](../FAQ.md) for common issues or open a [GitHub issue](https://github.com/[YOUR_USERNAME]/AegisCode/issues) for specific problems.

@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  aegiscode-backend:
+    build: ./src/backend
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+    volumes:
+      - ./src/backend:/app
+      - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - database
+      - redis
+
+  aegiscode-frontend:
+    build: ./src/frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - REACT_APP_API_URL=http://localhost:3001
+    depends_on:
+      - aegiscode-backend
+
+  database:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=aegiscode
+      - POSTGRES_USER=aegiscode
+      - POSTGRES_PASSWORD=aegiscode_password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    environment:
+      - OLLAMA_HOST=0.0.0.0
+
+volumes:
+  postgres_data:
+  redis_data:
+  ollama_data:

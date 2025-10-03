@@ -1,0 +1,108 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#16213e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f3460;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a90e2;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#357abd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2c5aa0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="codeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4aa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00a8cc;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bgGradient)"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="100" cy="100" r="2" fill="#4a90e2" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1100" cy="300" r="3" fill="#00d4aa" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="200" cy="350" r="1.5" fill="#357abd" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Main shield icon -->
+  <g transform="translate(150, 100)">
+    <path d="M50 20 L90 20 L100 40 L90 80 L50 80 L40 40 Z" fill="url(#shieldGradient)" filter="url(#glow)"/>
+    <path d="M50 20 L90 20 L100 40 L90 80 L50 80 L40 40 Z" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+    
+    <!-- Shield inner design -->
+    <path d="M55 30 L85 30 L90 45 L85 70 L55 70 L50 45 Z" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.6"/>
+    <circle cx="70" cy="50" r="8" fill="#ffffff" opacity="0.4"/>
+    <path d="M65 50 L68 53 L75 46" stroke="#4a90e2" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Code brackets -->
+  <g transform="translate(300, 120)" fill="url(#codeGradient)">
+    <path d="M0 0 L0 60 L20 60 L20 20 L40 20 L40 0 Z" opacity="0.8"/>
+    <path d="M60 0 L60 20 L80 20 L80 60 L100 60 L100 0 Z" opacity="0.8"/>
+    <rect x="20" y="25" width="60" height="10" opacity="0.6"/>
+    <rect x="20" y="40" width="40" height="10" opacity="0.6"/>
+  </g>
+  
+  <!-- AI neural network pattern -->
+  <g transform="translate(450, 100)" opacity="0.7">
+    <circle cx="0" cy="0" r="4" fill="#00d4aa"/>
+    <circle cx="30" cy="0" r="4" fill="#4a90e2"/>
+    <circle cx="60" cy="0" r="4" fill="#00d4aa"/>
+    <circle cx="15" cy="25" r="3" fill="#357abd"/>
+    <circle cx="45" cy="25" r="3" fill="#4a90e2"/>
+    <circle cx="30" cy="50" r="3" fill="#00d4aa"/>
+    
+    <line x1="0" y1="0" x2="15" y2="25" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+    <line x1="30" y1="0" x2="15" y2="25" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+    <line x1="30" y1="0" x2="45" y2="25" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+    <line x1="60" y1="0" x2="45" y2="25" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+    <line x1="15" y1="25" x2="30" y2="50" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+    <line x1="45" y1="25" x2="30" y2="50" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+  </g>
+  
+  <!-- Main title -->
+  <text x="600" y="180" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#ffffff" text-anchor="middle">
+    AegisCode
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="220" font-family="Arial, sans-serif" font-size="20" fill="#4a90e2" text-anchor="middle" opacity="0.9">
+    The Ultimate Self-Hosted AI Code Editor
+  </text>
+  
+  <!-- Feature tags -->
+  <g transform="translate(600, 250)">
+    <rect x="-200" y="0" width="80" height="25" rx="12" fill="#4a90e2" opacity="0.2"/>
+    <text x="-160" y="16" font-family="Arial, sans-serif" font-size="12" fill="#4a90e2" text-anchor="middle">🤖 AI-Powered</text>
+    
+    <rect x="-100" y="0" width="80" height="25" rx="12" fill="#00d4aa" opacity="0.2"/>
+    <text x="-60" y="16" font-family="Arial, sans-serif" font-size="12" fill="#00d4aa" text-anchor="middle">🔒 Secure</text>
+    
+    <rect x="0" y="0" width="80" height="25" rx="12" fill="#357abd" opacity="0.2"/>
+    <text x="40" y="16" font-family="Arial, sans-serif" font-size="12" fill="#357abd" text-anchor="middle">🧩 Extensible</text>
+    
+    <rect x="100" y="0" width="80" height="25" rx="12" fill="#4a90e2" opacity="0.2"/>
+    <text x="140" y="16" font-family="Arial, sans-serif" font-size="12" fill="#4a90e2" text-anchor="middle">⚡ Fast</text>
+  </g>
+  
+  <!-- Bottom decorative line -->
+  <line x1="200" y1="350" x2="1000" y2="350" stroke="url(#codeGradient)" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Version or tagline -->
+  <text x="600" y="380" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle" opacity="0.7">
+    Built with ❤️ for developers who value security and AI innovation
+  </text>
+</svg>

@@ -25,7 +25,7 @@ AegisCode is a next-generation, self-hosted AI code editor and compiler that emp
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/[YOUR_USERNAME]/AegisCode.git
+git clone https://github.com/[ryzalain]/AegisCode.git
 cd AegisCode
 ```
 
